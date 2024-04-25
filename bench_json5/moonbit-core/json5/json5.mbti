@@ -1,0 +1,29 @@
+package moonbitlang/core/json5
+
+alias @moonbitlang/core/json as @json
+
+// Values
+fn parse(String) -> Result[@json.JsonValue, ParseError]
+
+// Types and methods
+pub enum ParseError {
+  InvalidChar(Position, Char)
+  InvalidEof
+  InvalidNumber(Position, String)
+  InvalidIdentEscape(Position)
+}
+fn ParseError::debug_write(ParseError, Buffer) -> Unit
+fn ParseError::op_equal(ParseError, ParseError) -> Bool
+fn ParseError::to_string(ParseError) -> String
+
+pub struct Position {
+  pub line : Int
+  pub column : Int
+}
+fn Position::debug_write(Position, Buffer) -> Unit
+fn Position::op_equal(Position, Position) -> Bool
+
+// Traits
+
+// Extension Methods
+

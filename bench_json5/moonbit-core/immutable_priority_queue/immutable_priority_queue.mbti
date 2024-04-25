@@ -1,0 +1,23 @@
+package moonbitlang/core/immutable_priority_queue
+
+// Values
+
+// Types and methods
+type Cont
+fn Cont::debug_write[T : Debug](Cont[T], Buffer) -> Unit
+fn Cont::to_string[T : Debug](Cont[T]) -> String
+
+type ImmutablePriorityQueue
+fn ImmutablePriorityQueue::from_array[T : Compare + Eq](Array[T]) -> ImmutablePriorityQueue[T]
+fn ImmutablePriorityQueue::is_empty[T](ImmutablePriorityQueue[T]) -> Bool
+fn ImmutablePriorityQueue::length[T](ImmutablePriorityQueue[T]) -> Int
+fn ImmutablePriorityQueue::new[T : Compare + Eq]() -> ImmutablePriorityQueue[T]
+fn ImmutablePriorityQueue::peek[T](ImmutablePriorityQueue[T]) -> Option[T]
+fn ImmutablePriorityQueue::pop[T : Compare + Eq](ImmutablePriorityQueue[T]) -> Option[ImmutablePriorityQueue[T]]
+fn ImmutablePriorityQueue::pop_exn[T : Compare + Eq](ImmutablePriorityQueue[T]) -> ImmutablePriorityQueue[T]
+fn ImmutablePriorityQueue::push[T : Compare + Eq](ImmutablePriorityQueue[T], T) -> ImmutablePriorityQueue[T]
+
+// Traits
+
+// Extension Methods
+

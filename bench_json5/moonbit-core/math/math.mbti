@@ -1,0 +1,23 @@
+package moonbitlang/core/math
+
+// Values
+fn cos(Double) -> Double
+
+fn maximum[T : Compare + Eq](T, T) -> T
+
+fn minimum[T : Compare + Eq](T, T) -> T
+
+fn sin(Double) -> Double
+
+fn tan(Double) -> Double
+
+// Types and methods
+type T
+fn T::compare(T, T) -> Int
+fn T::debug_write(T, Buffer) -> Unit
+fn T::op_equal(T, T) -> Bool
+
+// Traits
+
+// Extension Methods
+
