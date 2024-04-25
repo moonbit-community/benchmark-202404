@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "start": "node bench.mjs",
+        "build": "pnpm run build:moonbit",
+        "build:moonbit": "cd moonbit-core && moon build --target js"
+    },
+    "dependencies": {
+        "json5": "^2.2.3",
+        "tinybench": "^2.8.0"
+    }
+}

@@ -1,8 +1,10 @@
 # benchmark-202404
 
-This code repository contains the source code for performance testing of Moonbit.
+This code repository contains the source code for performance benchmark of Moonbit.
 
 The benchmark code for `iter` is in the bench_iter subfolder.
+
+The benchmark code for `json5` is in the bench_json5 subfolder.
 
 ## How to run the benchmark
 
@@ -12,6 +14,15 @@ iter
 
 ```
 cd bench_iter
+pnpm install
+pnpm build
+pnpm start
+```
+
+json5
+
+```
+cd bench_json5
 pnpm install
 pnpm build
 pnpm start
