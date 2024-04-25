@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+
+bench_iter/moonbit-project/target/**/*.mi
+bench_iter/moonbit-project/target/**/*.core
+bench_iter/moonbit-project/target/**/*.moon_db
+bench_iter/moonbit-project/target/**/moon.db
+
+
+bench_iter/kotlin-project/.gradle
+bench_iter/kotlin-project/build/*
+!bench_iter/kotlin-project/build/distributions

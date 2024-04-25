@@ -1,0 +1,12 @@
+{
+    "private": true,
+    "scripts": {
+        "start": "node bench.mjs",
+        "build": "pnpm build:moonbit && pnpm build:kotlin",
+        "build:moonbit": "cd moonbit-project && moon build --target js",
+        "build:kotlin": "cd kotlin-project && ./gradlew browserProductionWebpack"
+    },
+    "dependencies": {
+        "tinybench": "^2.8.0"
+    }
+}

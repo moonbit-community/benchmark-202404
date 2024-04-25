@@ -1,0 +1,15 @@
+[
+  '{{repeat(5, 7)}}',
+  {
+    "class": '{{index()}}',
+    "members": [
+      '{{repeat(30, 50)}}',
+      {
+        "id": '{{index()}}',
+        "name": '{{surname()}}',
+        "gender": '{{gender()}}',
+        "score": '{{integer(0, 100)}}'
+      }
+    ]
+  }
+]
