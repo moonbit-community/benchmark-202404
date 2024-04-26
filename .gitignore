@@ -7,6 +7,7 @@ bench_iter/moonbit-project/target/**/*.moon_db
 bench_iter/moonbit-project/target/**/moon.db
 
 
+bench_iter/kotlin-project/.idea
 bench_iter/kotlin-project/.gradle
 bench_iter/kotlin-project/build/*
 !bench_iter/kotlin-project/build/distributions
